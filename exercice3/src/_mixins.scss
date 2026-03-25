@@ -1,0 +1,51 @@
+@mixin button-responsive(
+    $bg-color,
+    $text-color,
+    $hover-bg-color,
+    $hover-text-color,
+    $border-radius,
+    $padding-y-base,
+    $padding-x-base,
+    $font-size-base
+) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; // Mobile first: pleine largeur
+
+    padding: $padding-y-base $padding-x-base;
+    font-size: $font-size-base;
+    border-radius: $border-radius;
+    border: none;
+    background-color: $bg-color;
+    color: $text-color;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: $hover-bg-color;
+        color: $hover-text-color;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: none;
+    }
+
+    // Adaptations pour écrans moyens (md)
+    @media (min-width: $breakpoint-md) {
+        width: auto; // Retour à la largeur naturelle du texte
+        display: inline-flex;
+        padding: ($padding-y-base * 1.5) ($padding-x-base * 1.5);
+        font-size: $font-size-base * 1.125;
+    }
+
+    // Adaptations pour grands écrans (lg)
+    @media (min-width: $breakpoint-lg) {
+        padding: ($padding-y-base * 1.75) ($padding-x-base * 1.75);
+        font-size: $font-size-base * 1.25;
+    }
+}

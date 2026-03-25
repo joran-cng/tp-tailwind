@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'variables';
+@import 'mixins';
+@import 'base';
+
+.btn-primary {
+    @include button-responsive(
+        $bg-color: $primary-color,
+        $text-color: $text-light,
+        $hover-bg-color: darken($primary-color, 10%),
+        $hover-text-color: $text-light,
+        $border-radius: 0.5rem,
+        $padding-y-base: 0.75rem,
+        $padding-x-base: 1.5rem,
+        $font-size-base: 1rem
+    );
+}
+
+.btn-secondary {
+    @include button-responsive(
+        $bg-color: $secondary-color,
+        $text-color: $text-dark,
+        $hover-bg-color: darken($secondary-color, 10%),
+        $hover-text-color: $text-light,
+        $border-radius: 0.25rem,
+        $padding-y-base: 0.5rem,
+        $padding-x-base: 1rem,
+        $font-size-base: 0.875rem
+    );
+}

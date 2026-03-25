@@ -1,0 +1,20 @@
+{
+  "name": "exercice3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "sass src/main.scss src/temp.css",
+    "build:tailwind": "tailwindcss -i src/temp.css -o public/output.css",
+    "build": "npm run build:sass && npm run build:tailwind"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "sass": "^1.98.0",
+    "tailwindcss": "^4.2.2"
+  }
+}
