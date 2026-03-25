@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP Plugin Tailwind : Table Triable</title>
+  <link href="./output.css" rel="stylesheet">
+  <style>
+    /* Utilisation de Tailwind mais ceci permet d'éviter les styles brutaux avant js */
+  </style>
+</head>
+<body class="bg-gray-100 min-h-screen p-8 text-gray-800 font-sans">
+
+  <div class="max-w-4xl mx-auto space-y-12">
+    <div>
+      <h1 class="text-3xl font-bold mb-2">Tables Triables Réutilisables</h1>
+      <p class="text-gray-600">Cliquez sur un en-tête pour trier la colonne correspondante.</p>
+    </div>
+
+    <!-- Table 1 : Utilisateurs -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <div class="px-6 py-4 border-b bg-gray-50">
+        <h2 class="text-lg font-semibold">Base de Données Utilisateurs (String & Number)</h2>
+      </div>
+      <!-- Responsive Wrapper -->
+      <div class="overflow-x-auto">
+        <table class="tw-table-sortable min-w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-white border-b border-gray-200">
+              <th data-key="name" class="px-6 py-4 font-semibold text-gray-600 hover:text-indigo-600 transition-colors">Nom</th>
+              <th data-key="age" class="px-6 py-4 font-semibold text-gray-600 hover:text-indigo-600 transition-colors">Âge</th>
+              <th data-key="city" class="px-6 py-4 font-semibold text-gray-600 hover:text-indigo-600 transition-colors">Ville</th>
+            </tr>
+          </thead>
+          <tbody id="users-tbody">
+            <!-- Rempli par main.js -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Table 2 : Produits -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <div class="px-6 py-4 border-b bg-gray-50">
+        <h2 class="text-lg font-semibold">Inventaire Produits (Indépendant)</h2>
+      </div>
+      <!-- Responsive Wrapper -->
+      <div class="overflow-x-auto">
+        <table class="tw-table-sortable min-w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-white border-b border-gray-200">
+              <th data-key="ref" class="px-6 py-4 font-semibold text-gray-600 hover:text-indigo-600 transition-colors">Référence</th>
+              <th data-key="price" class="px-6 py-4 font-semibold text-gray-600 hover:text-indigo-600 transition-colors">Prix (€)</th>
+              <th data-key="stock" class="px-6 py-4 font-semibold text-gray-600 hover:text-indigo-600 transition-colors">Stock</th>
+            </tr>
+          </thead>
+          <tbody id="products-tbody">
+            <!-- Rempli par main.js -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Inclusions JS -->
+  <script src="./data.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
