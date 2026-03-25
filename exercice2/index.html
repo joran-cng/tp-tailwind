@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus - Votre Espace de Collaboration Moderne</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <!-- Intégration de Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                        N
+                    </div>
+                    <span class="font-bold text-xl tracking-tight text-gray-900">Nexus</span>
+                </div>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-indigo-600 font-medium transition-colors">Fonctionnalités</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-indigo-600 font-medium transition-colors">Tarifs</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-indigo-600 font-medium transition-colors">Témoignages</a>
+                </nav>
+
+                <!-- Desktop CTA -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium transition-colors">Se connecter</a>
+                    <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg font-medium shadow-sm transition-all hover:shadow-md">
+                        Essai gratuit
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 p-2 rounded-md">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Note: Le menu mobile déroulant (javascript) n'est pas codé ici pour rester "pur CSS", mais la structure de base est posée. -->
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow">
+        
+        <!-- HERO SECTION -->
+        <section class="relative bg-white overflow-hidden">
+            <div class="max-w-7xl mx-auto">
+                <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 pt-16 px-4 sm:px-6 lg:px-8">
+                    <div class="text-center lg:text-left">
+                        <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                            <span class="block xl:inline">Centralisez votre travail</span>
+                            <span class="block text-indigo-600 xl:inline">avec élégance.</span>
+                        </h1>
+                        <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                            Nexus est l'outil de gestion collaborative nouvelle génération conçu pour booster la productivité de votre équipe. Simple, rapide et incroyablement puissant.
+                        </p>
+                        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start gap-3">
+                            <div class="rounded-md shadow">
+                                <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10 transition-all hover:shadow-lg">
+                                    Commencer gratuitement
+                                </a>
+                            </div>
+                            <div class="mt-3 sm:mt-0">
+                                <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-indigo-700 bg-indigo-50 hover:bg-indigo-100 md:py-4 md:text-lg md:px-10 transition-colors">
+                                    Voir la démo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 mt-8 lg:mt-0">
+                <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="Équipe travaillant sur ordinateur">
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION -->
+        <section id="features" class="py-16 sm:py-24 lg:py-32 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-base font-semibold text-indigo-600 tracking-wide uppercase">Fonctionnalités Clés</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        Tout ce dont vous avez besoin pour réussir
+                    </p>
+                    <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                        Fini le désordre. Avec Nexus, retrouvez toutes vos tâches, discussions et fichiers au même endroit.
+                    </p>
+                </div>
+
+                <div class="mt-16">
+                    <!-- Grille responsive: 1 col (mobile), 2 (tablette), 3 (desktop) -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                        
+                        <!-- Feat 1 -->
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                            <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-bolt text-indigo-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Performance ultra-rapide</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Un temps de chargement quasi inexistant. Fluidité garantie, même avec des milliers de tâches en cours.
+                            </p>
+                        </div>
+
+                        <!-- Feat 2 -->
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                            <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-users text-indigo-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Collaboration en temps réel</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Discutez, modifiez et validez des documents simultanément avec toute votre équipe sans effort.
+                            </p>
+                        </div>
+
+                        <!-- Feat 3 -->
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                            <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-cloud-arrow-up text-indigo-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Sauvegarde Cloud Sécurisée</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Vos données sont cryptées et sauvegardées automatiquement sur nos serveurs haute disponibilité.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION (FINAL CALL TO ACTION) -->
+        <section class="bg-indigo-700">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+                <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                    <span class="block">Prêt à simplifier votre quotidien ?</span>
+                    <span class="block text-indigo-200 mt-2">Créez votre compte en 2 minutes.</span>
+                </h2>
+                <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0 gap-3">
+                    <div class="inline-flex rounded-md shadow">
+                        <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-lg text-indigo-600 bg-white hover:bg-gray-50 transition-colors">
+                            Inscription gratuite
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <!-- Footer logo and description -->
+                <div class="space-y-8 xl:col-span-1">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 bg-indigo-500 rounded flex items-center justify-center text-white font-bold">N</div>
+                        <span class="font-bold text-xl text-white tracking-tight">Nexus</span>
+                    </div>
+                    <p class="text-gray-400 text-base">
+                        Rendre le travail d'équipe interactif, rapide et sans frontières, partout dans le monde.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <span class="sr-only">Facebook</span>
+                            <i class="fa-brands fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <span class="sr-only">Twitter</span>
+                            <i class="fa-brands fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <span class="sr-only">GitHub</span>
+                            <i class="fa-brands fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Links -->
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Produit</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li><a href="#" class="text-base text-gray-400 hover:text-white transition-colors">Fonctionnalités</a></li>
+                                <li><a href="#" class="text-base text-gray-400 hover:text-white transition-colors">Tarifs</a></li>
+                                <li><a href="#" class="text-base text-gray-400 hover:text-white transition-colors">Sécurité</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Support</h3>
+                            <ul class="mt-4 space-y-4">
+                                <li><a href="#" class="text-base text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+                                <li><a href="#" class="text-base text-gray-400 hover:text-white transition-colors">Guides API</a></li>
+                                <li><a href="#" class="text-base text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800">
+                <p class="text-base text-gray-400 xl:text-center">
+                    &copy; 2026 Nexus Inc. Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
