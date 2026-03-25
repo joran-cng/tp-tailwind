@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innovatech Solutions</title>
+  <!-- Google Fonts : Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-900 transition-colors duration-300 dark:bg-slate-900 dark:text-slate-100 font-sans antialiased">
+
+  <!-- Navbar & Dark Mode Toggle -->
+  <header class="fixed w-full top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <svg class="w-8 h-8 text-brand-600 dark:text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        <span class="font-extrabold text-xl tracking-tight">Innovatech.</span>
+      </div>
+      <nav class="hidden md:flex gap-8 font-medium text-sm text-slate-600 dark:text-slate-300">
+        <a href="#accueil" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Accueil</a>
+        <a href="#services" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Nos Solutions</a>
+        <a href="#medias" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Médias</a>
+        <a href="#about" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">À propos</a>
+      </nav>
+      <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors focus:ring-2 focus:ring-brand-500 focus:outline-none" aria-label="Basculer le thème">
+        <!-- Moon icon -->
+        <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden text-slate-700 dark:text-slate-300" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+        <!-- Sun icon -->
+        <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden text-slate-700 dark:text-slate-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Section Accueil -->
+  <section id="accueil" class="pt-32 pb-20 lg:pt-48 lg:pb-32 px-6 wrapper animate-fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-5xl lg:text-7xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6">
+        Construisons le futur,<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-indigo-400 dark:from-brand-400 dark:to-indigo-300">ligne par ligne.</span>
+      </h1>
+      <p class="text-lg lg:text-xl text-slate-600 dark:text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+        Innovatech Solutions accompagne votre transformation numérique avec des outils de pointe. Propulsez vos idées grâce à notre écosystème intelligent et performant.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#services" class="w-full sm:w-auto px-8 py-3.5 bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-brand-500/30 transition-all focus:ring-4 focus:ring-brand-500/50">Démarrer maintenant</a>
+        <a href="#about" class="w-full sm:w-auto px-8 py-3.5 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 font-semibold rounded-lg shadow-sm transition-all focus:ring-4 focus:ring-slate-200 dark:focus:ring-slate-700">Découvrir la mission</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Services / Fonctionnalités Clés -->
+  <section id="services" class="py-24 bg-white dark:bg-slate-800/50 border-y border-slate-100 dark:border-slate-800 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-brand-600 dark:text-brand-400 font-bold tracking-wide uppercase text-sm mb-3">Fonctionnalités</h2>
+        <h3 class="text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">Nos Solutions Innovantes</h3>
+        <p class="text-slate-600 dark:text-slate-400">Automatisez vos processus et gagnez en productivité avec notre suite de fonctionnalités conçue pour les équipes modernes.</p>
+      </div>
+
+      <!-- Grille responsive 1 -> 2 -> 3 colonnes -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Carte 1 -->
+        <div class="group bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-8 hover:-translate-y-2 hover:shadow-xl dark:hover:shadow-brand-900/20 hover:border-brand-200 dark:hover:border-brand-800 transition-all duration-300">
+          <div class="w-12 h-12 bg-indigo-100 dark:bg-brand-900/50 text-brand-600 dark:text-brand-400 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Vitesse Fulgurante</h4>
+          <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">Notre architecture distribuée assure un temps de réponse en millisecondes, même lors de pics de trafic intenses.</p>
+          <a href="#" class="inline-flex items-center text-brand-600 dark:text-brand-400 font-semibold group-hover:underline">
+            En savoir plus 
+            <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <!-- Carte 2 -->
+        <div class="group bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-8 hover:-translate-y-2 hover:shadow-xl dark:hover:shadow-brand-900/20 hover:border-brand-200 dark:hover:border-brand-800 transition-all duration-300">
+          <div class="w-12 h-12 bg-pink-100 dark:bg-pink-900/30 text-pink-600 dark:text-pink-400 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+          </div>
+          <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Sécurité Militaire</h4>
+          <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">Vos données sont chiffrées de bout en bout avec encryptage AES-256. La confidentialité de vos utilisateurs est notre priorité absolue.</p>
+          <a href="#" class="inline-flex items-center text-pink-600 dark:text-pink-400 font-semibold group-hover:underline">
+            En savoir plus 
+            <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <!-- Carte 3 -->
+        <div class="group bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-8 hover:-translate-y-2 hover:shadow-xl dark:hover:shadow-brand-900/20 hover:border-brand-200 dark:hover:border-brand-800 transition-all duration-300">
+          <div class="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
+          </div>
+          <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Extensibilité Illimitée</h4>
+          <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">Une API GraphQL documentée et un système de webhooks robustes pour s'intégrer facilement avec vos propres outils internes.</p>
+          <a href="#" class="inline-flex items-center text-emerald-600 dark:text-emerald-400 font-semibold group-hover:underline">
+            En savoir plus 
+            <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Médias -->
+  <section id="medias" class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Les médias en parlent</h3>
+      </div>
+      <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16 opacity-60 dark:opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
+        <!-- Logos fictifs -->
+        <h4 class="text-2xl font-black">TECH<span class="text-brand-600 font-light">CRUNCH</span></h4>
+        <h4 class="text-2xl font-serif italic">The Verge</h4>
+        <h4 class="text-2xl font-bold tracking-widest uppercase">Wired</h4>
+        <h4 class="text-xl font-bold">FastCompany</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section A propos -->
+  <section id="about" class="py-24 bg-brand-900 text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl lg:text-4xl font-extrabold mb-6">À propos d'Innovatech</h2>
+      <p class="text-brand-100 text-lg mb-10 leading-relaxed">
+        Nous sommes une équipe de passionnés, développeurs, ingénieurs et designers, unis par une même mission : 
+        démocratiser l'accès aux technologies de pointe pour permettre aux entreprises de toute taille de réaliser leur plein potentiel.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-12 text-center border-t border-brand-800 pt-10">
+        <div>
+          <span class="block text-4xl font-black mb-2 text-brand-400">99.9%</span>
+          <span class="text-brand-200">Uptime garanti</span>
+        </div>
+        <div>
+          <span class="block text-4xl font-black mb-2 text-brand-400">+50M</span>
+          <span class="text-brand-200">Requêtes par jour</span>
+        </div>
+        <div>
+          <span class="block text-4xl font-black mb-2 text-brand-400">24/7</span>
+          <span class="text-brand-200">Support humain</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center text-slate-500 dark:text-slate-400 text-sm border-t border-slate-200 dark:border-slate-800 dark:bg-slate-900">
+    <p>&copy; 2026 Innovatech Solutions. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Script Mode Sombre -->
+  <script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const darkIcon = document.getElementById('theme-toggle-dark-icon');
+    const lightIcon = document.getElementById('theme-toggle-light-icon');
+
+    // On load, set icon
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        lightIcon.classList.remove('hidden');
+        document.documentElement.classList.add('dark');
+    } else {
+        darkIcon.classList.remove('hidden');
+    }
+
+    // Toggle event
+    themeToggleBtn.addEventListener('click', function() {
+        darkIcon.classList.toggle('hidden');
+        lightIcon.classList.toggle('hidden');
+
+        if (localStorage.getItem('color-theme')) {
+            if (localStorage.getItem('color-theme') === 'light') {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+            }
+        // if NOT set via local storage previously
+        } else {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+            }
+        }
+    });
+  </script>
+</body>
+</html>
