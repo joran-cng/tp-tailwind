@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP Plugin Tailwind : Chutier Drag & Drop</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen p-8 font-sans">
+  
+  <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4 border-b pb-4">
+      <div>
+        <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight">Plugin Chutier HTML5 D&D</h1>
+        <p class="text-gray-500 mt-1">Générez une interface de classement réutilisable et modulaire.</p>
+      </div>
+      <button onclick="resetDndState()" class="bg-red-500 hover:bg-red-600 px-4 py-2 text-white rounded-lg transition-colors font-medium cursor-pointer shadow-sm text-sm">Réinitialiser l'état</button>
+    </div>
+
+    <!-- Interface générique générée par le plugin Tailwind -->
+    <div class="tw-dnd-container">
+
+      <!-- Dossier Gauche -->
+      <div class="tw-chutier" id="chutier">
+          <span class="text-sm font-semibold text-gray-400 mb-2 uppercase tracking-wide">📦 Produits Non Classés</span>
+          <!-- Items injectés ici par main.js -->
+      </div>
+
+      <!-- Dossiers Droites -->
+      <div class="tw-dropzones">
+        <div class="tw-dropzone border-indigo-200" data-zone="1">
+          <span class="text-sm font-semibold text-indigo-400 mb-2 uppercase tracking-wide">💼 Zone Business</span>
+        </div>
+        <div class="tw-dropzone border-emerald-200" data-zone="2">
+          <span class="text-sm font-semibold text-emerald-400 mb-2 uppercase tracking-wide">⭐ Zone Premium</span>
+        </div>
+        <div class="tw-dropzone border-amber-200" data-zone="3">
+          <span class="text-sm font-semibold text-amber-400 mb-2 uppercase tracking-wide">❓ Zone Autre</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./data.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
